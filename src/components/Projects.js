@@ -1,0 +1,70 @@
+import React from "react";
+
+function Projects() {
+  return (
+    <div>
+      <section id="section3"
+        className="h-screen bg-gray-100 flex items-center justify-center p-8"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+          <a
+            href="/component1"
+            className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
+          >
+            <img
+              src="/genshin-logo.png"
+              alt="Component 1"
+              className="w-full h-80 object-contain"
+            />
+            <div className="p-6">
+              <h3 className="text-2xl font-bold mb-2">Genshin Impact Character Filter</h3>
+              <p className="text-lg text-gray-700">
+                An application that can filter, search and sort data. The data is queried to MongoDB Database.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="/component2"
+            className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
+          >
+            <img
+              src="/expense-logo.png"
+              alt="Component 2"
+              className="w-full h-80 object-contain bg-white"
+            />
+            <div className="p-6">
+              <h3 className="text-2xl font-bold mb-2">Expense Management System</h3>
+              <p className="text-lg text-gray-700">
+                A simple CRUD application using Express and MongoDB that can compute and checks your expenses.
+              </p>
+            </div>
+          </a>
+
+          <a
+            className="bg-gray-200 rounded-lg shadow-lg overflow-hidden flex flex-col relative cursor-not-allowed opacity-50"
+            aria-disabled="true"
+          >
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Component 3"
+              className="w-full h-80 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-2xl font-bold mb-2"></h3>
+              <p className="text-lg text-gray-700">
+                
+              </p>
+            </div>
+
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <span className="text-white text-3xl font-bold">Coming Soon</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Projects;
