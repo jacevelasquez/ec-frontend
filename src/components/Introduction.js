@@ -17,7 +17,7 @@ function Introduction() {
         </div>
         <div className="w-1/2 bg-gray-100 flex items-center justify-center">
           <img
-            src="/xlarge.png"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png"
             alt="Placeholder Image"
             className="object-cover w-3/4 h-3/4"
           />

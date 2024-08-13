@@ -1,4 +1,5 @@
 import React from "react";
+import { Link  } from 'react-router-dom';
 
 function Projects() {
   return (
@@ -12,7 +13,7 @@ function Projects() {
             className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
           >
             <img
-              src="/genshin-logo.png"
+              src="https://raw.githubusercontent.com/jacevelasquez/ec-frontend/master/public/genshin-logo.png"
               alt="Component 1"
               className="w-full h-80 object-contain"
             />
@@ -23,37 +24,36 @@ function Projects() {
               </p>
             </div>
           </a>
-
-          <a
-            href="/component2"
+          <Link
+            to="/pokedex"
             className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
           >
             <img
-              src="/expense-logo.png"
+              src="https://raw.githubusercontent.com/jacevelasquez/ec-frontend/master/public/pokedex-logo.png"
               alt="Component 2"
               className="w-full h-80 object-contain bg-white"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">Expense Management System</h3>
+              <h3 className="text-2xl font-bold mb-2">Mini-Pokedex</h3>
               <p className="text-lg text-gray-700">
-                A simple CRUD application using Express and MongoDB that can compute and checks your expenses.
+                An application that can search about Pokemon bio, types and abilities. The data is integrated from PokeAPI.
               </p>
             </div>
-          </a>
+          </Link>
 
           <a
             className="bg-gray-200 rounded-lg shadow-lg overflow-hidden flex flex-col relative cursor-not-allowed opacity-50"
             aria-disabled="true"
           >
             <img
-              src="https://via.placeholder.com/600x400"
+              src="https://raw.githubusercontent.com/jacevelasquez/ec-frontend/master/public/expense-logo.png"
               alt="Component 3"
-              className="w-full h-80 object-cover"
+              className="w-full h-80 object-contain"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2"></h3>
+              <h3 className="text-2xl font-bold mb-2">Expense Management System</h3>
               <p className="text-lg text-gray-700">
-                
+                A simple CRUD application using Express and MongoDB that can compute and checks your expenses.
               </p>
             </div>
 

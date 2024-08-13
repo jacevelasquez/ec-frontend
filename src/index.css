@@ -82,3 +82,93 @@ footer {
   border-right: 10px solid transparent; /* Adjust size as needed */
   border-bottom: 10px solid black; /* Adjust color and size as needed */
 }
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.grass {
+  background-color: green;
+  color: white;
+}
+
+.normal {
+  background-color: rgb(196, 193, 193);
+  color: black;
+}
+
+.fire {
+  background-color: red;
+  color: white;
+}
+
+.water {
+  background-color: blue;
+  color: black;
+}
+
+.electric {
+  background-color: yellow;
+  color: black;
+}
+
+.ice {
+  background-color: lightblue;
+  color: white;
+}
+
+.fighting {
+  background-color: maroon;
+  color: white;
+}
+
+.poison {
+  background-color: rgb(231, 62, 231);
+  color: white;
+}
+
+.ground {
+  background-color: brown;
+  color: white;
+}
+
+.flying {
+  background-color: rgb(36, 158, 214);
+  color: black;
+}
+
+.psychic {
+  background-color: rgb(238, 41, 74);
+  color: white;
+}
+
+.bug {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.rock {
+  background-color: rgba(187, 113, 113, 0.63);
+  color: white;
+}
+
+.ghost {
+  background-color: rgb(134, 33, 192);
+  color: white;
+}
+
+.dragon {
+  background-color: rgb(199, 28, 185);
+  color: white;
+}
+
+.steel {
+  background-color: gray;
+  color: white;
+}
+
+.fairy {
+  background-color: pink;
+  color: black;
+}
