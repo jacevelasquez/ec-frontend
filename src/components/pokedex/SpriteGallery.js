@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link  } from 'react-router-dom';
 import axios from "axios";
 import { handleMenuClick, capitalizeFirstLetter } from "../../functions/utils";
 
@@ -67,17 +68,16 @@ function SpriteGallery() {
   }, [activeMenu]);
 
   return (
-    <div className="m-5 p-5 w-full">
-      <div className="flex h-[50px] bg-yellow-50 shadow-md">
+    <div className="p-5 w-full">
+      <div className="flex h-[50px] pokedex-header shadow-md">
         {gens.map((item, index) => (
           <div
-            key={index}
+            key={index}  // Use index as a last resort
             className={`flex-grow flex items-center justify-center text-center cursor-pointer transition-all duration-300 ease-in-out 
-            ${
-              activeMenu === item.menu
-                ? "bg-yellow-300 text-gray-800 font-bold scale-105 shadow-lg"
-                : "bg-yellow-100 text-gray-600 hover:bg-yellow-200"
-            }`}
+              ${activeMenu === item.menu
+                ? "bg-violet-300 text-gray-800 font-bold scale-105 shadow-lg"
+                : "bg-violet-200 text-gray-600 hover:bg-violet-400"
+              }`}
             onClick={() => handleMenuClick(item.menu, setActiveMenu)}
           >
             <p className="text-lg px-4">{item.label}</p>
@@ -85,22 +85,28 @@ function SpriteGallery() {
         ))}
       </div>
 
-      <div className="flex bg-blue-100 p-5">
+      <div className="flex p-5">
         {gens.map((item, index) => ( activeMenu === item.menu && (
           <div className="flex flex-wrap justify-center w-full overflow-y-auto max-h-[500px]">
-            {loading && <p>Loading Gen {index+1} Pokémon...</p>}
+            {loading && <div>
+                          <p>Loading Gen {index+1} Pokémon...</p>
+                          <img src="/pokeball-loading.gif" />
+                        </div>}
             {error && <p>{error}</p>}
 
             {/* Display Pokémon sprites for Gen 1 */}
             {!loading &&
               pokeData.map((pokemon, index) => (
                 <div key={index} className="m-4 p-2 text-center">
+                <Link 
+                  to={`/sprites/${pokemon.number}`}>
                   <img
                     src={pokemon.sprite}
                     alt={pokemon.name}
-                    className="w-32 h-32 mb-2"
+                    className="w-22 h-22 mb-2"
                   />
                   <p className="text-sm">{pokemon.name}</p>
+                </Link>
                 </div>
               ))}
           </div>
