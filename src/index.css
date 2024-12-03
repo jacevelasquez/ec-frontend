@@ -15,7 +15,6 @@ body, h1, h2, p {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding-top: 60px; /* To prevent content from hiding under the fixed header */
 }
 
 /* Header Styles */
@@ -81,6 +80,17 @@ footer {
   border-left: 10px solid transparent; /* Adjust size as needed */
   border-right: 10px solid transparent; /* Adjust size as needed */
   border-bottom: 10px solid black; /* Adjust color and size as needed */
+}
+
+.pokedex {
+  margin-left: 24rem;
+  margin-right: 24rem;
+  padding-top: 2.5rem;
+}
+
+.pokedex-header {
+  --tw-bg-opacity: 1;
+    background-color: rgb(221 214 254 / var(--tw-bg-opacity)) 
 }
 
 .dark {
