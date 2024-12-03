@@ -11,7 +11,7 @@ function Introduction() {
               This is a simple introduction to Section 1. Here you can provide
               information about this section's content, goals, or any other
               relevant details that will help your visitors understand what they
-              can expect.
+              can expect..
             </p>
           </div>
         </div>
